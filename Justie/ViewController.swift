@@ -14,15 +14,13 @@ class ViewController: UIViewController {
   
     @IBOutlet weak var RON: UILabel!
     
-    var tapCount = 0
-
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+   
     @IBAction func Pushed(_ sender: Any) {
-        tapCount = tapCount + 1
-        if tapCount >= 15 {
-            RON.text = ("Stop harrasing it!")
-        }
+        RON.text = "Your Answer is: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
-    
+        
 
     
     
