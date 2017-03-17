@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     @IBAction func Pushed(_ sender: Any) {
         tapCount = tapCount + 1
-        if tapCount >= 10 {
+        if tapCount >= 15 {
             RON.text = ("Stop harrasing it!")
         }
     }
